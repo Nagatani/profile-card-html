@@ -11,6 +11,6 @@ srcディレクトリに画像以外全部入ってます。
 
 ## Screenshots
 ### WXGA
-![WXGA](https://raw.githubusercontent.com/nagatani/images/ss-wxga.png)
+![WXGA](https://raw.githubusercontent.com/nagatani/profile-card-html/images/ss-wxga.png)
 ### iPhone 6
-![WXGA](https://raw.githubusercontent.com/nagatani/images/ss-iphone6.png)
+![iPhone6](https://raw.githubusercontent.com/nagatani/profile-card-html/images/ss-iphone6.png)
