@@ -1,0 +1,151 @@
+/* すべての余白を削除 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HTMLを画面いっぱいに設定 */
+html, body {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+}
+/* ページ共通の文字設定 */
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* プロフィールカード全体のスタイル設定 */
+.profile-card {
+  height: 346px;
+  max-height: 80%;
+  width: 600px;
+  max-width: 80%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: -4px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.profile-card::after {
+  clear: both;
+}
+.profile-photo {
+  height: 100%;
+  width: 42%;
+  overflow: hidden;
+  float: left;
+}
+.profile-photo img {
+  height: 100%;
+  position: relative;
+  left: -173px;
+}
+.profile-text {
+  float: right;
+  width: 58%;
+  height: calc(100% - 40px);
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 1);
+}
+.profile-text h1 {
+  font-size: 2em;
+  font-weight: normal;
+  padding: 8px 16px 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 1);
+}
+.profile-text p {
+  padding: 24px;
+}
+
+/* カードのフッタ部分を設定 */
+.profile-footer {
+  float: right;
+  width: 58%;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3) inset;
+}
+.profile-footer ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 0 16px;
+}
+.profile-footer ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px 1px 0 rgba(255, 255, 255, 1);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.profile-footer ul li a:hover {
+  opacity: 1;
+}
+.fa-twitter {
+  color: rgb(29, 161, 242);
+}
+.fa-facebook-official {
+  color: rgb(59, 89, 152);
+}
+
+/* 背景画像の設定 */
+.background {
+  position: absolute;
+  z-index: 0;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(bg.jpg);
+  -webkit-filter: contrast(88%) brightness(90%);
+  filter: contrast(88%) brightness(90%);
+}
+
+/* スマートフォン向けスタイル */
+@media (max-width: 640px) {
+  .profile-card {
+    height: auto;
+  }
+  .profile-card::after {
+    clear: none;
+  }
+  .profile-photo {
+    height: 42%;
+    width: 100%;
+    float: none;
+    overflow: hidden;
+  }
+  .profile-photo img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+  .profile-text {
+    float: none;
+    width: 100%;
+    height: calc(58% - 40px);
+  }
+  .profile-footer {
+    float: none;
+    width: 100%;
+    height: 40px;
+  }
+}
