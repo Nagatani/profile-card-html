@@ -113,7 +113,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(bg.jpg);
+  background-image: url(../img/bg.jpg);
   -webkit-filter: contrast(88%) brightness(90%);
   filter: contrast(88%) brightness(90%);
 }
