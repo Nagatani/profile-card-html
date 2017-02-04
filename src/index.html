@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Profile Card</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/balloon-css/0.2.4/balloon.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -15,15 +16,18 @@
       </div>
       <div class="profile-text">
         <h1>仮名 太郎</h1>
-        <p>自己紹介をここに書こう<br>
-          &lt;br&gt;で改行、&lt;strong&gt;<strong>強調したい文字</strong>&lt;strong&gt;などが使えます。
-        </p>
+        <p>自己紹介をここに書こう</p>
+        <h4>すきなこと</h4>
+        <ul>
+          <li>好きなこと１</li>
+          <li>好きなこと２</li>
+        </ul>
       </div>
       <div class="profile-footer">
         <ul>
-          <li><a href="http://www.meiden.ed.jp" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li><button data-balloon="mail to me!" data-balloon-pos="up"><a href="http://www.yahoo.co.jp" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></button></li>
+          <li><button data-balloon="Follow me!" data-balloon-pos="up"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><button data-balloon="Let's be friends!!" data-balloon-pos="up"><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
